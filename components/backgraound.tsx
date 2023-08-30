@@ -1,15 +1,17 @@
 import { FC } from 'react';
+import "../style/background.css"
 
 interface BackgroundProps { }
 const Background: FC<BackgroundProps> = () => {
     return (
-       <div className="loader">
-  <div className="blackhole">
-    <div className="blackhole-circle" />
-    <div className="blackhole-disc" />
-  </div>
-</div>
-
+        <>
+            <div className="container">
+                <div className="blackhole">
+                    <div className="blackhole-circle" />
+                    <div className="blackhole-disc" />
+                </div>
+            </div>
+        </>
     );
 };
 
