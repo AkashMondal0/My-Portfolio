@@ -9,10 +9,12 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 interface SkillCardProps {
     name: string;
     image: string;
+    description: string;
 }
 const SkillCard: FC<SkillCardProps> = ({
     name,
-    image
+    image,
+    description
 }) => {
     const Ref = useRef(null);
 
@@ -48,9 +50,6 @@ const SkillCard: FC<SkillCardProps> = ({
                         h-full
                         rounded-2xl
                         shadow-xl
-                        transition-all
-                        duration-500
-                        ease-in-out
                         dark:hover:border-gray-100/30
                         hover:border-gray-900/30'>
         <MouseParallaxContainer globalFactorX={0.2} globalFactorY={0.1}>
@@ -59,7 +58,7 @@ const SkillCard: FC<SkillCardProps> = ({
             </CardHeader>
             <CardContent>
                 <CardDescription>
-                    2+ years of experience with Microsoft Azure
+                    {description}
                 </CardDescription>
             </CardContent>
             <CardFooter>

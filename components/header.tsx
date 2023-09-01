@@ -12,7 +12,7 @@ const Header: FC<HeaderProps> = () => {
             <div className="flex justify-between items-center h-full w-full mx-3">
                 <Link href="/">
                     <div className="flex items-center gap-2">
-                        <div className="w-12 h-12 rounded-full bg-white">
+                        <div className="w-12 h-12 rounded-full dark:bg-white bg-black">
                             <img src="/Image.png" alt="avatar" className="w-full h-full rounded-full object-cover" />
                         </div>
                         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">SkySolo</h1>
@@ -24,10 +24,12 @@ const Header: FC<HeaderProps> = () => {
                     <div className="flex items-center gap-4">
                         <Link href="/" className="text-gray-900 dark:text-gray-100">Home</Link>
                         <Link href="/about" className="text-gray-900 dark:text-gray-100">About</Link>
+                        <Link href="/projects" className="text-gray-900 dark:text-gray-100">Projects</Link>
+
                     </div>
                     {/*  */}
                     <div className='md:flex hidden gap-4'>
-                        <Link href="/contact">
+                        <Link href="#contact">
                             <Button>Contact</Button>
                         </Link>
                         {/* mode toggle */}
