@@ -62,48 +62,21 @@ const skills = [
         description: 'Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.'
     }
 ]
-interface SkillsShowProps { }
-const SkillsShow: FC<SkillsShowProps> = () => {
+const Skills: FC = () => {
     return (
         <>
             <div className='h-10 w-full' id='skills'></div>
             <div className="my-10 w-full md:mx-auto" >
-                <h1 className="
-        text-4xl
-        text-center
-        font-bold
-        text-gray-900
-        dark:text-gray-100
-        mb-4
-      ">Skills</h1>
-                {/* skills description */}
-                <p className="
-        text-2xl
-        text-center
-        text-gray-900
-        dark:text-gray-100
-        px-4
-        mx-auto
-        py-2 md:max-w-[95%]
-        lg:max-w-[60%]
-      ">I have a strong command over both front-end and back-end technologies with 2+ years of experience.</p>
+            <h1 className="text-4xl text-center font-bold text-gray-900 dark:text-gray-100 mb-4">Skills</h1>
+            {/* skills description */}
+            <p className="text-2xl text-center text-gray-900 
+                dark:text-gray-100 px-4 mx-auto py-2 md:max-w-[95%] lg:max-w-[60%]">
+                I have a strong command over both front-end and back-end technologies with 2+ years of experience.</p>
             </div>
 
             {/* cards */}
-            <div className='
-        grid
-        grid-cols-1
-        sm:grid-cols-1
-        md:grid-cols-2
-        lg:grid-cols-3
-        xl:grid-cols-3
-        gap-4
-        p-4
-        md:max-w-[95%]
-        lg:max-w-[70%]
-        w-full
-        mx-auto
-            '>
+            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 
+            lg:grid-cols-3 xl:grid-cols-3 gap-4 p-4 md:max-w-[95%] lg:max-w-[70%] w-full mx-auto'>
                 {skills.map((skill, index) => (
                     <SkillCard key={index} name={skill.name} image={skill.image} description={skill.description} />
                 ))}
@@ -112,4 +85,4 @@ const SkillsShow: FC<SkillsShowProps> = () => {
     );
 };
 
-export default SkillsShow;
+export default Skills;

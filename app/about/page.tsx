@@ -1,17 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import '../../style/imageRing.css'
-import Header from '@/components/header';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../components/ui/card';
-import { Code2, Users2 } from 'lucide-react';
-
+import { Code2, Github, Mail, Users2 } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'About Me',
+}
 
 const About = () => {
 
   return (
-    <div className='sky-bg-gradient-about'>
-      <Header />
-      <div className='mt-16 overflow-x-hidden'>
+    <>
+      <div className='mt-24 overflow-x-hidden'>
         {/* top */}
         <h1
           style={{
@@ -22,29 +26,55 @@ const About = () => {
         text-center
         font-bold
         text-gray-900
-        dark:text-gray-100
-        mt-5
-      ">About Me</h1>
-        <div className='lg:flex gap-8 w-full lg:w-4/5 p-3
-        mx-auto my-5 transition-all duration-500 ease-in-out'>
+        dark:text-gray-100">About Me</h1>
+        {/* main */}
+        <div className='lg:flex gap-8 w-full
+        p-4 max-w-[1200px] justify-center mx-auto
+        my-5 transition-all duration-500 ease-in-out'>
           {/* left */}
-          <div className='my-auto'>
-            <div
-              className='my-5 w-60 lg:w-72 rounded-full px-2 mx-auto animate__animated animate__backInDown'>
-              <div className='card'>
+          <div>
+            <div className='my-5 w-60 lg:w-72 rounded-full px-2 mx-auto animate__animated animate__backInDown'>
+              <div className='ring'>
                 <img src="sky.jpg" alt="photo"
                   className=" object-cover rounded-full dark:border-4
                 shadow-2xl dark:shadow-none" />
               </div>
             </div>
+            <h1 style={{
+              animationDelay: '1s',
+            }} className="text-2xl animate__bounceIn animate__animated text-center font-bold text-gray-900 dark:text-gray-100 my-2">
+              Akash Mondal
+            </h1>
+            <p className='text-center mb-5'>akash2003mondal@gmail.com</p>
+            <div className='w-full flex justify-center gap-2 animate__bounceIn animate__animated'>
+              <Link href='https://github.com/AkashMondal0' target="_blank">
+                <Button variant={"outline"}>
+                  <Github className="mr-2 h-4 w-4" /> Github
+                </Button>
+              </Link>
+              <Link href='mailto: akash2003mondal@gmail.com'>
+                <Button>
+                  <Mail className="mr-2 h-4 w-4" /> Email
+                </Button>
+              </Link>
+            </div>
           </div>
           {/* right */}
           <div className='my-2 flex justify-center items-center'>
-            <div className='w-full lg:max-w-[85%]'>
+            <div className='w-full'>
+              {/* description  */}
+              {/* //TODO: add animation */}
+              <p
+                style={{
+                  animationDelay: '1s',
+                }}
+                className="animate__animated animate__zoomInUp  text-xl text-center text-gray-900 dark:text-gray-100 px-4 mx-4 py-2 ">
+                {`Hi! I'm Akash Mondal, a 19-year-old. I enjoy learning new things and technology. 
+                  Stay tuned as I describe my experience in the computer and technology industries.`}</p>
               {/* cards experience */}
               <div className='md:flex gap-3 justify-center my-5'>
                 <Card style={{
-                  animationDelay: '1s',
+                  animationDelay: '2s',
                 }}
                   className='w-full my-2 h-60 animate__bounceInLeft animate__animated
                         rounded-2xl
@@ -55,7 +85,7 @@ const About = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <Code2 className='w-20 h-20 mx-auto' />
+                    <Code2 className='w-16 h-16 mx-auto' />
                   </CardContent>
                   <CardFooter >
                     <CardDescription className='mx-auto'>
@@ -64,7 +94,7 @@ const About = () => {
                   </CardFooter>
                 </Card>
                 <Card style={{
-                  animationDelay: '1s',
+                  animationDelay: '2s',
                 }}
                   className='my-2 w-full h-60 animate__bounceInRight animate__animated
                         rounded-2xl
@@ -75,7 +105,7 @@ const About = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <Users2 className='w-20 h-20 mx-auto' />
+                    <Users2 className='w-16 h-16 mx-auto' />
                   </CardContent>
                   <CardFooter >
                     <CardDescription className='mx-auto'>
@@ -84,30 +114,21 @@ const About = () => {
                   </CardFooter>
                 </Card>
               </div>
-              {/* description  */}
-              {/* //TODO: add animation */}
-              <p
+              <div className='animate__bounceInLeft animate__animated'
                 style={{
                   animationDelay: '2s',
-                }}
-                className="animate__animated animate__zoomInUp 
-        text-2xl
-        text-center
-        text-gray-900
-        dark:text-gray-100
-        px-4 mx-4
-        py-2
-      ">{`Hi! I'm Akash Mondal, a 19-year-old guy following 
-      a Diploma in Computer Science Engineering (CSE).
-       I enjoy learning new things and technology.
-        Stay tuned as I describe my experience in the computer and technology industries.`}</p>
+                }}>
+                <p className='mx-3 mt-2 text-xl'>🐍 A Snake Eating my Contributions Graph</p>
+                <Card
+                  className='w-full h-96 my-2 rounded-2xl shadow-xl'>
+                  <img src="grid-snake.svg" alt="about" className='w-full h-full object-cover p-2 rounded-2xl' />
+                </Card>
+              </div>
             </div>
           </div>
         </div>
-        <div className='h-[40vh]'></div>
-        {/* <Footer /> */}
       </div>
-    </div>
+    </>
   );
 };
 

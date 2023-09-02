@@ -4,9 +4,7 @@ import { FC } from 'react';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 
-interface FooterProps { }
-
-const Footer: FC<FooterProps> = () => {
+const Footer: FC = () => {
   return (
     <footer className="
     bg-white
@@ -56,14 +54,13 @@ const Footer: FC<FooterProps> = () => {
             <h5 className="uppercase mb-3">More</h5>
             <ul className="list-none">
               <li className="mt-2">
-                <Link href="/privacy-policy">
-                  <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">Privacy Policy</div>
-                </Link>
+
+                <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">Privacy Policy</div>
+
               </li>
               <li className="mt-2">
-                <Link href="/terms-of-service">
-                  <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">Terms of Service</div>
-                </Link>
+                <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">Terms of Service</div>
+
               </li>
             </ul>
           </div>
@@ -72,19 +69,25 @@ const Footer: FC<FooterProps> = () => {
             <h5 className="uppercase mb-3">About Sky.inc</h5>
             <ul className="list-none">
               <li className="mt-2">
-                <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">
-                  Twitter
-                </div>
+                <Link href="https://github.com/AkashMondal0" target="_blank">
+                  <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">
+                    Github
+                  </div>
+                </Link>
               </li>
               <li className="mt-2">
-                <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">
-                  Facebook
-                </div>
+                <Link href="https://stackoverflow.com/users/21296702/akash-mondal" target="_blank">
+                  <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">
+                    Stack Overflow
+                  </div>
+                </Link>
               </li>
               <li className="mt-2">
-                <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">
-                  Instagram
-                </div>
+                <Link href="https://www.instagram.com/akashmondal__1/" target="_blank">
+                  <div className=" hover:opacity-80 transition-all delay-75 duration-150 sm:cursor-pointer">
+                    Instagram
+                  </div>
+                </Link>
               </li>
             </ul>
           </div>

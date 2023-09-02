@@ -4,7 +4,7 @@
     inherits: false;
 }
 
-.card {
+.ring {
     background: #191c29;
     padding: 3px;
     position: relative;
@@ -19,7 +19,7 @@
 }
 
 
-.card::before {
+.ring::before {
     content: "";
     width: 104%;
     height: 102%;
@@ -35,10 +35,10 @@
     border-radius: 1000px;
 }
 
-.card::after {
+.ring::after {
     position: absolute;
     content: "";
-    top: calc(var(--card-height) / 6);
+    top: calc(var(--ring-height) / 6);
     border-radius: 1000px;
     left: 0;
     right: 0;
@@ -47,7 +47,7 @@
     width: 100%;
     margin: 0 auto;
     transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
+    filter: blur(calc(var(--ring-height) / 6));
     background-image: linear-gradient(var(--rotate),
             #5ddcff,
             #3c67e3 43%,
@@ -68,8 +68,8 @@
 }
 
 
-/* card 2 */
-.card2 {
+/* ring 2 */
+.ring2 {
     background: #191c29;
     padding: 3px;
     position: relative;
@@ -85,7 +85,7 @@
 }
 
 
-.card2::before {
+.ring2::before {
     content: "";
     width: 104%;
     height: 102%;
@@ -101,10 +101,10 @@
     border-radius: 1000px;
 }
 
-.card2::after {
+.ring2::after {
     position: absolute;
     content: "";
-    top: calc(var(--card-height) / 6);
+    top: calc(var(--ring-height) / 6);
     border-radius: 1000px;
     left: 0;
     right: 0;
@@ -113,7 +113,7 @@
     width: 100%;
     margin: 0 auto;
     transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
+    filter: blur(calc(var(--ring-height) / 6));
     background-image: linear-gradient(var(--rotate),
             #ffffff,
             #e3e5eb 43%,
