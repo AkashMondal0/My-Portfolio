@@ -1,9 +1,5 @@
 # My Portfolio
 
-![Preview](https://firebasestorage.googleapis.com/v0/b/next-js-chat-app-33c2b.appspot.com/o/my%20resource%2FPortfolio.png?alt=media&token=34dd56fb-1ca9-4bcd-83fd-00912b3e406d)
-
-Welcome to my professional portfolio website, meticulously crafted with industry-leading technologies to showcase my skills, experiences, and projects.
-
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -41,5 +37,10 @@ Follow these steps to set up the project locally:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
-   cd your-portfolio
+   git clone https://github.com/AkashMondal0/My-Portfolio.git
+   cd My-Portfolio
+
+
+![Preview](https://firebasestorage.googleapis.com/v0/b/next-js-chat-app-33c2b.appspot.com/o/my%20resource%2FPortfolio.png?alt=media&token=8234f6cd-7138-4552-8ef3-809f98e93740)
+![Preview](https://firebasestorage.googleapis.com/v0/b/next-js-chat-app-33c2b.appspot.com/o/my%20resource%2FAbout-Me.png?alt=media&token=fcc973c8-5e8a-4ac0-9b68-1c13a1f30fed)
+![Preview](https://firebasestorage.googleapis.com/v0/b/next-js-chat-app-33c2b.appspot.com/o/my%20resource%2FProjects.png?alt=media&token=6b89ddc5-286c-4e77-b14c-cd07440966f2)
