@@ -4,10 +4,12 @@ import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
 import { ThemeProvider } from '@/components/provider/theme-provider'
 import { cn } from '@/lib/utils'
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 const font = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'My Portfolio',
+  title: 'Portfolio',
   description: 'Explore a collection of my latest projects and achievements on my portfolio website powered by Next.js. Discover innovative web development projects, seamless user experience, and technological expertise.',
   authors: [{
     name: 'Akash Mondal',
@@ -29,7 +31,9 @@ export default function RootLayout({
           defaultTheme='dark'
           enableSystem={false}
           storageKey='my-portfolio-theme'>
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

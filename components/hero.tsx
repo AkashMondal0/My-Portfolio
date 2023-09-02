@@ -6,22 +6,16 @@ import TypingText from './TypingText';
 import Link from 'next/link';
 import "../style/imageRing.css"
 
-interface HeroProps { }
-const Hero: FC<HeroProps> = () => {
+const Hero: FC = () => {
   return (
     <>
       <div className="md:hidden h-16"></div>
       {/* small device */}
       <div className="md:hidden h-full mt-16">
         <div className='flex justify-center my-8 animate__flip animate__animated'>
-          <div className='card2'>
-            <img src="/image 3.png" alt="photo" className="rounded-full 
-        w-52 h-52 object-cover mx-auto
-        shadow-2xl
-        dark:shadow-none
-        transition-all
-        duration-500
-        ease-in-out "/>
+          <div className='ring2'>
+            <img src="/image 3.png" alt="photo" className="rounded-full w-52 h-52 object-cover mx-auto shadow-2xl
+             dark:shadow-none transition-all duration-500 ease-in-out "/>
           </div>
         </div>
         {/* heading */}
@@ -33,28 +27,17 @@ const Hero: FC<HeroProps> = () => {
             3000,
             'I love creating websites',
             3000,
-          ]} className="text-4xl
-          text-center
-          font-bold
-          text-gray-900
-          dark:text-gray-100
-          mb-4"/>
+          ]} className="text-4xl text-center font-bold text-gray-900 dark:text-gray-100 mb-4" />
           {/* description */}
-          <p className="
-        text-2xl
-        text-center
-        text-gray-900
-        dark:text-gray-100
-        px-4
-        py-2">
+          <p className="text-2xl text-center text-gray-900 dark:text-gray-100 px-4 py-2">
             {`I enjoy making websites that look great and work smoothly.`}
           </p>
           <div className="my-5 flex justify-center gap-4">
             <Link href="#skills">
-              <Button variant={"outline"} size={'lg'}>My Skills</Button>
+              <Button variant={"outline"} size={'lg'}>Skills</Button>
             </Link>
-            <Link href="/project">
-              <Button variant={'default'} size={'lg'}>My Projects</Button>
+            <Link href="#contact">
+              <Button variant={'default'} size={'lg'}>Contact Me</Button>
             </Link>
           </div>
         </div>
@@ -85,20 +68,15 @@ const Hero: FC<HeroProps> = () => {
               3000,
             ]} />
           {/* description for large device */}
-          <p className="
-          text-4xl
-          text-center
-          text-gray-900
-          dark:text-gray-100
-          p-4">
+          <p className="text-4xl text-center text-gray-900 dark:text-gray-100 p-4">
             {`I enjoy making websites that look great and work smoothly.`}
           </p>
           <div className="my-5 flex justify-center gap-4">
             <Link href="#skills">
-              <Button variant={"outline"} size={'lg'}>My Skills</Button>
+              <Button variant={"outline"} size={'lg'}>Skills</Button>
             </Link>
-            <Link href="/project">
-              <Button variant={'default'} size={'lg'}>My Projects</Button>
+            <Link href="#contact">
+              <Button variant={'default'} size={'lg'}>Contact Me</Button>
             </Link>
           </div>
         </div>

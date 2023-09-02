@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio
+
+![Preview](https://firebasestorage.googleapis.com/v0/b/next-js-chat-app-33c2b.appspot.com/o/my%20resource%2FPortfolio.png?alt=media&token=34dd56fb-1ca9-4bcd-83fd-00912b3e406d)
+
+Welcome to my professional portfolio website, meticulously crafted with industry-leading technologies to showcase my skills, experiences, and projects.
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [Customization](#customization)
+- [Deployment](https://my-portfolio-sky-inc.vercel.app/)
+
+## Overview
+This portfolio website serves as a dynamic and visually engaging platform to present my professional journey. Key features include:
+
+- **Next.js:** A React framework for building performant web applications.
+- **Tailwind CSS:** A utility-first CSS framework for creating responsive and polished UIs.
+- **next-themes:** Adds theme support and dynamic theming capabilities to Next.js applications.
+- **GSAP (GreenSock Animation Platform):** Elevates user experience with smooth animations and interactive elements.
+
+## Features
+- **Responsive Design:** The website is meticulously designed to be responsive and accessible on various devices and screen sizes.
+- **Theme Support:** Leverage `next-themes` to switch between light and dark themes effortlessly.
+- **Animations:** Employ GSAP to create eye-catching animations and transitions.
+- **Optimized Images:** Images are optimized for fast loading times and a seamless user experience.
+- **Contact Form:** Provide an easy way for visitors to get in touch with you.
+- **SEO-friendly:** Enhance your online visibility with SEO best practices.
+
+## Technologies
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [next-themes](https://github.com/pacocoursey/next-themes)
+- [GSAP](https://greensock.com/gsap/)
+- [shadcn ui](https://greensock.com/gsap/)
 
 ## Getting Started
+Follow these steps to set up the project locally:
 
-First, run the development server:
+1. **Clone the Repository:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/your-username/your-portfolio.git
+   cd your-portfolio
