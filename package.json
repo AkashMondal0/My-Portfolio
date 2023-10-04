@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build && next export && touch out/.nojekyll",
+    "deploy": "gh-pages -t true -b master -d out"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.4",
