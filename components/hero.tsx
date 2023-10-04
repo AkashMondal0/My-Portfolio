@@ -14,7 +14,7 @@ const Hero: FC = () => {
       <div className="md:hidden h-full mt-16">
         <div className='flex justify-center my-8 animate__flip animate__animated'>
           <div className='ring2'>
-            <img src="/image 3.png" alt="photo" className="rounded-full w-52 h-52 object-cover mx-auto shadow-2xl
+            <img src="image 3.png" alt="photo" className="rounded-full w-52 h-52 object-cover mx-auto shadow-2xl
              dark:shadow-none transition-all duration-500 ease-in-out "/>
           </div>
         </div>

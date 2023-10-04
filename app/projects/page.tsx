@@ -27,7 +27,11 @@ const ComponentName: FC = () => {
               link2='https://sky-chat-sigma.vercel.app/'
               name='Sky Chat'
               url="sky-chat.png" />
-
+            <ProjectCard
+              link='https://github.com/AkashMondal0/Discord-Clone'
+              link2='#'
+              name='Discord Clone'
+              url="Discord-Clone.png" />
             <ProjectCard
               link='https://github.com/AkashMondal0/Instagram-Web-Clone'
               link2='https://instagram-clone-skyinc.vercel.app/'
