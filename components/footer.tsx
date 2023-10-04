@@ -18,7 +18,7 @@ const Footer: FC = () => {
           <div className="mt-2 md:mt-0">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-full dark:bg-white bg-black">
-                <img src="/Image.png" alt="avatar" className="w-full h-full rounded-full object-cover" />
+                <img src="Image.png" alt="avatar" className="w-full h-full rounded-full object-cover" />
               </div>
               <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">SkySolo</h1>
             </div>
