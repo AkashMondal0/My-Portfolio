@@ -60,7 +60,33 @@ const skills = [
         name: 'Docker',
         image: 'docker1.png',
         description: 'Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.'
+    },
+    {
+        name: 'Kubernetes',
+        image: 'kubernetes.png',
+        description: 'Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.'
+    },
+    {
+        name:"Nginx",
+        image:"nginx.png",
+        description:"Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy, and HTTP cache."
+    },
+    {
+        name:"Apache Kafka",
+        image:"kafka.png",
+        description:"Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications."
+    },
+    {
+        name:"Redis",
+        image:"redis.png",
+        description:"Redis is an open-source, in-memory data structure store, used as a database, cache, and message broker."
+    },
+    {
+        name:"Jenkins",
+        image:"jenkins.png",
+        description:"Jenkins is an open-source automation server that helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery."
     }
+ 
 ]
 const Skills: FC = () => {
     return (

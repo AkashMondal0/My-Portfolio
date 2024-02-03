@@ -69,7 +69,7 @@ const About = () => {
                   animationDelay: '1s',
                 }}
                 className="animate__animated animate__zoomInUp  text-xl text-center text-gray-900 dark:text-gray-100 px-4 mx-4 py-2 ">
-                {`Hi! I'm Akash Mondal, a 19-year-old. I enjoy learning new things and technology. 
+                {`Hi! I'm Akash Mondal, a 20-year-old. I enjoy learning new things and technology. 
                   Stay tuned as I describe my experience in the computer and technology industries.`}</p>
               {/* cards experience */}
               <div className='md:flex gap-3 justify-center my-5'>

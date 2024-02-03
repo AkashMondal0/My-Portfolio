@@ -43,8 +43,8 @@ const Hero: FC = () => {
         </div>
         <div className='h-96'>
           <img src="blackhole.png" alt="photo" className="w-full h-full object-cover hidden dark:flex" />
-          <img src="light-hero.svg"
-            alt="photo" className="p-5 w-full h-full object-cover dark:hidden flex" />
+          <img src="hero.jpg"
+            alt="hero" className="p-5 w-full h-full object-cover dark:hidden" />
         </div>
       </div>
 
