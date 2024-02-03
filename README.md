@@ -7,6 +7,8 @@
 - [Getting Started](#getting-started)
 - [Customization](#customization)
 - [Deployment](https://my-portfolio-sky-inc.vercel.app/)
+- [Deployment](https://skysolo.me)
+- [Deployment](https://www.skysolo.me)
 
 ## Overview
 This portfolio website serves as a dynamic and visually engaging platform to present my professional journey. Key features include:
